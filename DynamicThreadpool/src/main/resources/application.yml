@@ -1,0 +1,19 @@
+server:
+  port: 9098
+
+spring:
+  dtp:
+    executors:
+      # 线程池1
+      - poolName: dtpExecutor1
+        corePoolSize: 5
+        maximumPoolSize: 10
+      #...其他参数
+
+   # 线程池2
+      - poolName: dtpExecutor2
+        corePoolSize: 2
+        maximumPoolSize: 15
+   #...其他参数
+
+   #线程池3\4\5
